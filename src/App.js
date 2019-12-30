@@ -1,8 +1,9 @@
 import React from 'react';
 import {BrowserRouter,Route, Switch } from 'react-router-dom'
+import ShopPage from './pages/shop/shop.component';
 import './App.css';
 
-import HomePage from './pages/homepage/homepage.component';
+import HomePage from './pages/homepage/homepage.component.jsx';
 
 const ChronographPage = () => (
   <div>
@@ -16,7 +17,7 @@ function App() {
     <BrowserRouter>
       <Switch>
         <Route exact path='/' component={HomePage} />
-        <Route path='/shop/chronograph' component={ChronographPage} />
+        <Route path='/shop' component={ShopPage} />
     </Switch>
   </BrowserRouter>
 
