@@ -4,11 +4,16 @@
   "private": true,
   "proxy": "http://localhost:5005",
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
+    "@babel/helper-builder-react-jsx-experimental": "^7.10.1",
+    "@babel/helper-module-transforms": "^7.10.1",
+    "@babel/plugin-transform-modules-commonjs": "^7.10.1",
+    "@babel/preset-react": "^7.10.1",
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.19.2",
     "firebase": "^7.6.1",
+    "node-fetch": "^2.6.0",
+    "node-pre-gyp": "^0.15.0",
     "node-sass": "^4.13.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -43,5 +48,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/helper-builder-react-jsx": "^7.10.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2"
   }
 }

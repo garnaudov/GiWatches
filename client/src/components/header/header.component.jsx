@@ -14,10 +14,10 @@ import {
   LogoContainer,
   HeaderContainer,
   OptionsContainer,
-  OptionLink
+  OptionLink,
 } from "./header.styles";
 
-const Header = ({ currentUser, hidden }) => (
+export const Header = ({ currentUser, hidden }) => (
   <HeaderContainer>
     <LogoContainer to="/">
       <Logo className="logo" />
@@ -39,7 +39,7 @@ const Header = ({ currentUser, hidden }) => (
 
 const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser,
-  hidden: selectCartHidden
+  hidden: selectCartHidden,
 });
 
 export default connect(mapStateToProps)(Header);
