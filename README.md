@@ -59,11 +59,11 @@ Users can view all the selected items in the cart panel:
 
 In the checkout panel users can increase or decrease the quantity of the items and see the live changes
 
-![image-20200616010419474](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20200616010419474.png)
+![image](https://i.ibb.co/7Kfr62P/image.png)
 
 By clicking **Pay now** button users are able to provide details for delivery:
 
-![image-20200616010910373](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20200616010910373.png)
+![image-20200616010910373](![image](https://i.ibb.co/vkZ1mqz/image.png)
 
 After that they are able to insert credit cart information in order to make a payment. Please note that in the project we are in **test mode**- that means **we do not affect live data or interact with banking networks**. 
 
