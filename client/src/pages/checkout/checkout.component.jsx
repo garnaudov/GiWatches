@@ -41,11 +41,7 @@ export const CheckoutPage = ({ cartItems, total }) => (
       <CheckoutItem key={cartItem.id} cartItem={cartItem} />
     ))}
     <TotalContainer>TOTAL: ${total}</TotalContainer>
-    <WarningContainer>
-      *You can use the following test credit card for payments*
-      <br />
-      4242 4242 4242 4242 - Exp: 01/20 - CVV: 123
-    </WarningContainer>
+    <WarningContainer></WarningContainer>
     <StripeCheckoutButton price={total} />
   </CheckoutPageContainer>
 );
