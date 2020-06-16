@@ -2,17 +2,28 @@
 
 # GWatches Online Store
 
-[TOC]
+Table of content:
 
-### Description
+- [GWatches Online Store](#gwatches-online-store)
+    + [Description](#description)
+    + [Technologies](#technologies)
+    + [Project overview](#project-overview)
+      - [Home page](#home-page)
+      - [Shop page](#shop-page)
+      - [Category page](#category-page)
+      - [Sign in page](#sign-in-page)
+      - [Adding items in the shopping cart](#adding-items-in-the-shopping-cart)
+      - [Checkout](#checkout)
+    + [Installation](#installation)
+    + [Testing](#testing)
+      - [Coverage](#coverage)
+    + [Future improvements](#future-improvements)
+
+## Description
 
 GWatches is online store platform for watches. It includes navigation and routing that takes user to different pages with multiple categories of items so they are able to add them in their cart. Users can register and sing in with their Google profile or with email/password traditional option). From that cart panel the customers are able to checkout, where they can increase or decrease the quantity of the items and see the live changes. Furthermore, the application provides a payment option via Stripe API, currently working in test mode.
 
-
-
-
-
-### Technologies
+## Technologies
 
 Technologies for developing the project:
 
@@ -21,15 +32,15 @@ Technologies for developing the project:
 - Integration with **Firebase**.
 - Integration with **Stripe API** for handling payments.
 
-### Project overview
+## Project overview
 
-#### Home page
+### Home page
 
 ![image-20200616001607905](https://i.ibb.co/ZXw7zGW/image-20200616001607905.png)
 
 
 
-#### Shop page
+### Shop page
 
 In the shop page 4 items from each category are displayed. User can see all the items in a particular category by clicking in the category name
 
@@ -37,25 +48,25 @@ In the shop page 4 items from each category are displayed. User can see all the 
 
 ![image](https://i.ibb.co/gjDx0sK/image.png)
 
-#### Category page
+### Category page
 
 ![image](https://i.ibb.co/7JHRcVW/image.png)
 
 
 
-#### Sign in page
+### Sign in page
 
 User can sign in with their email or password if they already have an account. Otherwise they can register or can sign in using Google. Once the user sign in SIGN OUT option is displayed instead of SIGN IN. Currently in the application all the features are available for registered and unregistered users both. More features for registered users will be added soon.
 
 ![image](https://i.ibb.co/KmqQ6Hm/image.png)
 
-#### Adding items in the shopping cart
+### Adding items in the shopping cart
 
 Users can view all the selected items in the cart panel:
 
 ![image](https://i.ibb.co/wNhyF78/image.png)
 
-#### Checkout
+### Checkout
 
 In the checkout panel users can increase or decrease the quantity of the items and see the live changes
 
@@ -63,7 +74,7 @@ In the checkout panel users can increase or decrease the quantity of the items a
 
 By clicking **Pay now** button users are able to provide details for delivery:
 
-![image-20200616010910373](![image](https://i.ibb.co/vkZ1mqz/image.png)
+![image](https://i.ibb.co/vkZ1mqz/image.png)
 
 After that they are able to insert credit cart information in order to make a payment. Please note that in the project we are in **test mode**- that means **we do not affect live data or interact with banking networks**. 
 
@@ -81,7 +92,7 @@ The owner of the online store (in my project that is me) is able to follow each 
 
 ![image](https://i.ibb.co/QXy6Nw6/image.png)
 
-### Installation
+## Installation
 
 1. Clone the repo;
 
@@ -97,7 +108,7 @@ The owner of the online store (in my project that is me) is able to follow each 
    2. `yarn install` or `npm install`
    3. `yarn start` or `npm start` - Runs node server.js. Server is running on port  5005;
 
-### Testing
+## Testing
 
 `yarn test` or `npm test` - Launches the test runner in the interactive watch mode.<br />
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
@@ -106,7 +117,7 @@ Test Suites: 18 total
 Tests: 42 total
 Snapshots: 14 total
 
-#### Coverage
+## Coverage
 
 Use `yarn test --coverage --watchAll=false` to check the test coverage
 
@@ -204,7 +215,7 @@ You can find the coverage table here:
 | user.types.js                       | 0       | 100      | 100     | 0       | 1                  |
 |                                     |         |          |         |         |                    |
 
-### Future improvements
+## Future improvements
 
 That is the beginning. There will be additional features for the registered customers and especially for administrators.
 
