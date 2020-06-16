@@ -9,20 +9,13 @@ const config = {
   projectId: "gwatches-4fb19",
   storageBucket: "gwatches-4fb19.appspot.com",
   messagingSenderId: "769604574269",
-  appId: "1:769604574269:web:d1e129b506f5cf2f6d5e54"
+  appId: "1:769604574269:web:d1e129b506f5cf2f6d5e54",
 };
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
   if (!userAuth) return; //need to assure that we get a valid object
 
-  //A queryReference obj represents the "current" place in the DB that we are querying
-  //doesnt have the actual data of the collection or document
-
   const userRef = firestore.doc(`users/${userAuth.uid}`);
-  //documentRef - use it to perform CRUD
-
-  //documentRef - returns documentSnapshot object
-  //collectionRef - returns querySnapshot object
 
   const snapShot = await userRef.get();
   if (!snapShot.exists) {
@@ -34,7 +27,7 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
         displayName,
         email,
         createdAt,
-        ...additionalData
+        ...additionalData,
       });
     } catch (err) {
       console.log("An error occured while creating user", err.message);
@@ -52,23 +45,21 @@ export const addCollectionAndDocuments = async (
   const collectionRef = firestore.collection(collectionKey);
 
   const batch = firestore.batch();
-  objectsToAdd.forEach(obj => {
+  objectsToAdd.forEach((obj) => {
     const newDocRef = collectionRef.doc();
     batch.set(newDocRef, obj);
   });
   return await batch.commit();
 };
 
-export const convertCollectionsSnapshotToMap = collections => {
-  const transformedCollection = collections.docs.map(doc => {
-    //snapshot.docs - array of collection items
-    //snapshot.docs[0].data() - we can get title and items
+export const convertCollectionsSnapshotToMap = (collections) => {
+  const transformedCollection = collections.docs.map((doc) => {
     const { title, items } = doc.data();
     return {
       routeName: encodeURI(title.toLowerCase()),
       id: doc.id,
       title,
-      items
+      items,
     };
   });
 
