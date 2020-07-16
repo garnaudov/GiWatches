@@ -36,7 +36,7 @@ Technologies for developing the project:
 
 ### Home page
 
-![image-20200616001607905](https://i.ibb.co/ZXw7zGW/image-20200616001607905.png)
+![image-20200616001607905](https://i.ibb.co/pyTmXYC/image.png)
 
 
 
@@ -44,13 +44,13 @@ Technologies for developing the project:
 
 In the shop page 4 items from each category are displayed. User can see all the items in a particular category by clicking in the category name
 
-![image](https://i.ibb.co/Jjw3s2W/image.png)
+![image](https://i.ibb.co/3TsRbJn/image.png)
 
-![image](https://i.ibb.co/gjDx0sK/image.png)
+![image](https://i.ibb.co/7Crkmp3/image.png)
 
 ### Category page
 
-![image](https://i.ibb.co/7JHRcVW/image.png)
+![image](https://i.ibb.co/s2dJzkQ/image.png)
 
 
 
@@ -58,7 +58,7 @@ In the shop page 4 items from each category are displayed. User can see all the 
 
 User can sign in with their email or password if they already have an account. Otherwise they can register or can sign in using Google. Once the user sign in SIGN OUT option is displayed instead of SIGN IN. Currently in the application all the features are available for registered and unregistered users both. More features for registered users will be added soon.
 
-![image](https://i.ibb.co/KmqQ6Hm/image.png)
+![image](https://i.ibb.co/Qr97Zyf/image.png)
 
 ### Adding items in the shopping cart
 
